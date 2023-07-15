@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+		<script src="https://code.highcharts.com/highcharts-more.js"></script>
+		<script src="https://code.highcharts.com/modules/series-label.js"></script>
+		<script src="https://code.highcharts.com/highcharts-more.js"></script>
+		<script src="https://code.highcharts.com/modules/bubble.js"></script>
+	</head>
+	<body class="is-preload">
+
+		
+			<div id="wrapper">
+
+				
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>JOB INSIGHTS</strong> </a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="static/images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Full Stack Developer</h1>
+							</header>
+							<div class="content">
+								<p> A full stack developer is a versatile professional who is proficient in both front-end and back-end development. They possess a comprehensive understanding of the entire software development stack, allowing them to design, build, and maintain end-to-end web applications with expertise in both the user interface and server-side functionality.
+
+
+
+
+								</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h3>Data Download</h3>
+									</header>
+									<p> Click on the button down below to download your data</p>
+									<ul class="actions">
+										<li><form action="http://127.0.0.1:5000/download" method='GET'>
+											<input type="hidden" name="html_file" value="fullstack.html">
+											<button  type="submit">Download</button>
+										  </form>
+										  </li>
+									</ul>
+								</div>
+									
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<div class="container">
+										<img src="static/images/pic08.jpg" id=""alt="" data-position="center center" />
+										<div id="salary"class="overlay" style="opacity: 0.5;"></div>
+										</div>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Salary Trends</h3>
+											</header>
+									
+										</div>
+									</div>
+								</section>
+								<section>
+									<div class="container">
+										<img src="static/images/pic09.jpg" id=""alt="" data-position="center center" />
+										<div id="location"class="overlay" style="opacity: 0.5;"></div>
+										</div>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Locations</h3>
+											</header>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<div class="container">
+										<img src="static/images/pic10.jpg" id=""alt="" data-position="center center" />
+										<div id="tech"class="overlay" style="opacity: 0.5;"></div>
+										</div>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Tech Requirements</h3>
+											</header>
+											
+										</div>
+									</div>
+								</section>
+							</section>
+							
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">jobinsights123@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>+91 9521944444</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Based in Delhi</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner"  style="display:flex; justify-content: center;" >
+							
+							<ul class="copyright">
+								<a href="index.html"   class="logo"><strong>Job Insights </strong></a>
+							
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+			<script>
+				function salary()
+				{
+					fetch("./fullstack.json")
+		.then(response => response.json())
+		.then(data => {
+		// Extract the salary values from the data
+		const salaries = data.map(item => parseFloat(item.Salary));
+		const locations=data.map(item => item.state);
+		console.log(locations)
+		console.log(salaries)
+		// Create the chart options
+		const options = {
+		chart: {
+		type: 'column',
+		
+		
+		},
+		title: {
+		text: 'Salary Visualization'
+		},
+		xAxis: {
+		categories: locations.slice(0,15)
+		},
+		yAxis: {
+		title: {
+			text: 'Salary'
+		}
+		},
+		series: [{
+		name: 'Salary',
+		data: salaries.slice(0,15)
+		}],
+		exporting: {
+		enabled: true // Enable the exporting module
+		},
+		plotOptions: {
+			series: {
+				borderWidth: 0,
+				dataLabels: {
+					enabled: true,
+					format: 'Rs. {point.y}'
+				}
+			}
+		},
+		}
+		
+		Highcharts.chart('salary',options);
+		})
+		.catch(error => {
+		console.error('Error loading dataset:', error);
+		});
+		}
+		function loc()
+		{
+		fetch("./fullstack.json")
+		.then(response => response.json())
+		.then(data => {
+		// Extract the salary values from the data
+		const locations=data.map(item => item.state).slice(0,25);
+		console.log(locations)
+		var counts = {};
+		var total = locations.length;
+	
+			for (var i = 0; i < total; i++) {
+				var location = locations[i];
+				counts[location] = counts[location] ? counts[location] + 1 : 1;
+			}
+	
+			var piedata = [];
+			for (var location in counts) {
+				var percentage = (counts[location] / total) * 100;
+				piedata.push([location, percentage]);
+			}
+	
+		// Create the chart options
+		const options = {
+		chart: {
+		type: 'pie',
+		
+		
+		},
+		title: {
+		text: 'Location Visualization'
+		},
+		series: [{
+		name: 'Locations',
+		data: piedata
+		}],
+		exporting: {
+		enabled: true // Enable the exporting module
+		},
+		plotOptions: {
+			pie: {
+				allowPointSelect: true,
+				cursor: 'pointer',
+				dataLabels: {
+					enabled: true,
+					format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+					connectorColor: 'silver'
+				}
+			}
+		},
+		}
+		
+		Highcharts.chart('location',options);
+		})
+		.catch(error => {
+		console.error('Error loading dataset:', error);
+		});
+			}
+			function techskills()
+			{
+				var skillData = [
+            { skill: 'Front-end Development', score: 8 },
+            { skill: 'Back-end Development', score: 7 },
+            { skill: 'Database Management', score: 6 },
+            { skill: 'UI/UX Design', score: 5 },
+            { skill: 'HTML/CSS', score: 8 },
+            { skill: 'JavaScript', score: 9 },
+            { skill: 'Python', score: 7 },
+            { skill: 'Node.js', score: 6 },
+            { skill: 'Express.js', score: 6 },
+            { skill: 'SQL', score: 7 },
+            { skill: 'React', score: 8 },
+            { skill: 'Angular', score: 6 },
+            { skill: 'Git', score: 8 },
+            { skill: 'Testing', score: 7 }
+        ];
+
+        // Prepare data for radar chart
+        var categories = skillData.map(function (item) {
+            return item.skill;
+        });
+
+        var data = [{
+            name: 'Skills',
+            data: skillData.map(function (item) {
+                return item.score;
+            })
+        }];
+
+        // Create the radar chart
+        Highcharts.chart('tech', {
+            chart: {
+                polar: true,
+                type: 'area'
+            },
+            title: {
+                text: 'Radar Chart - Full Stack Developer'
+            },
+            xAxis: {
+                categories: categories,
+                tickmarkPlacement: 'on',
+                lineWidth: 0
+            },
+            yAxis: {
+                gridLineInterpolation: 'polygon',
+                lineWidth: 0,
+                min: 0
+            },
+            tooltip: {
+                shared: true,
+                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y}</b><br/>'
+            },
+            series: data,
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            }
+        });
+			}	
+		salary()
+		loc()
+		techskills()		
+				
+	</script>
+
+	</body>
+</html>
